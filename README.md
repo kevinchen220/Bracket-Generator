@@ -1,6 +1,6 @@
 # Bracket Generator
 ### [Check it out on Firebase](https://bracketgenerator-220.web.app/)
-!([Website Screenshot](bracketGenerator.png))(https://bracketgenerator-220.web.app/)
+[![Website Screenshot](bracketGenerator.png)](https://bracketgenerator-220.web.app/)
 
 ## About
 This is a tournament bracket generator. <br>
