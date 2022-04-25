@@ -1,4 +1,6 @@
 function PlayerDisplay(props) {
+  console.log(props.data["names"]);
+  let players = JSON.parse(JSON.stringify(props.data["names"]));
   return (
     <div className="col-4">
       <table className="table table-sm table-hover table-striped">
@@ -10,7 +12,7 @@ function PlayerDisplay(props) {
           </tr>
         </thead>
         <tbody>
-          {props.data["players"].map((player) => (
+          {players.map((player) => (
             <tr>
               <td className="col-2">{player.id}</td>
               <td className="col-5">{player.name}</td>
