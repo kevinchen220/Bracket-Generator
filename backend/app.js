@@ -4,7 +4,7 @@ const Brackets = require("./models/brackets");
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const uri =
-  "mongodb+srv://kevinchen220:coolkevin@brackets.c3od9.mongodb.net/Brackets?retryWrites=true&w=majority";
+  "mongodbURI";
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
