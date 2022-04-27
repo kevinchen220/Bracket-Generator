@@ -12,7 +12,7 @@ To advance the players simply click on them.
 To delete players, click on the "x" next to them in the list of players. <br>
 Pressing the save button will generate a link to access the bracket you created. Make sure to save after editting.
 
-### Bult With
+### Built With
 
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/en/)
