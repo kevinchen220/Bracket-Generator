@@ -85,8 +85,10 @@ app.get("/:id", async (req, res) => {
     }
   } catch (error) {
     const bracket = null;
+    const names = null;
     res.json({
       bracket,
+      names,
     });
   }
 });

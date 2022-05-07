@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NotFound from "./NotFound";
 
 function Input(props) {
   const [name, setName] = useState("");
@@ -19,6 +20,9 @@ function Input(props) {
     }
   };
 
+  if (JSON.parse(JSON.stringify(props.data["names"])) === null) {
+    return <NotFound />;
+  }
   return (
     <div className="container">
       <div className="row">

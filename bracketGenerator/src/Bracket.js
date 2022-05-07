@@ -24,6 +24,11 @@ function Bracket(props) {
 
   console.log(props.data);
   console.log(JSON.parse(JSON.stringify(props.data["names"])));
+
+  if (JSON.parse(JSON.stringify(props.data["names"])) === null) {
+    return;
+  }
+
   var size = JSON.parse(JSON.stringify(props.data["names"])).length;
   var minSize = size;
   console.log(bracket);
@@ -61,7 +66,7 @@ function Bracket(props) {
         }
       }
     }
-    updateBracket([...newBracket])
+    updateBracket([...newBracket]);
     console.log("ASKJDHKASJHDKLASJHDKLASHJD");
   }
 
@@ -93,7 +98,7 @@ function Bracket(props) {
     }
     console.log(newBracket);
     console.log(bracket);
-    updateBracket([...newBracket])
+    updateBracket([...newBracket]);
     console.log("ASKJDHKASJHDKLASJHDKLASHJD");
   } else {
     newBracket = bracket;

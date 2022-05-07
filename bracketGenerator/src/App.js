@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="container">
       <div className="row mt-3">
-        <Input addPlayer={updatePlayer} />
+        <Input data={names} addPlayer={updatePlayer} />
       </div>
       <Bracket data={names} url={url} key="bracket" />
       <div className="row mt-3">

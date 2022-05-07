@@ -1,13 +1,20 @@
 function PlayerDisplay(props) {
   console.log(props.data["names"]);
   let players = JSON.parse(JSON.stringify(props.data["names"]));
+  if (players === null) {
+    return;
+  }
   return (
     <div className="col-4">
       <table className="table table-sm table-hover table-striped">
         <thead>
           <tr>
-            <th scope="col" className="col-2">ID</th>
-            <th scope="col" className="col-5">Player Names</th>
+            <th scope="col" className="col-2">
+              ID
+            </th>
+            <th scope="col" className="col-5">
+              Player Names
+            </th>
             <th scope="col" className="col-1"></th>
           </tr>
         </thead>
