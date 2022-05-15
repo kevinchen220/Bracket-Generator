@@ -34,4 +34,4 @@ Only the bracketGenerator folder is needed. <br>
 Edit some some commented code in Bracket.js to run locally.
 
 - Use `npm i` to install all dependencies
-- Host at [http://localhost:3000/](http://localhost:5000/) using `npm start`
+- Host at [http://localhost:3000/](http://localhost:3000/) using `npm start`
